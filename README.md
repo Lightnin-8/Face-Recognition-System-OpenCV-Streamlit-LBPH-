@@ -1,70 +1,52 @@
-🌟 Face Recognition System (OpenCV + Streamlit + LBPH)
+# 🌟 Face Recognition System (OpenCV + Streamlit + LBPH)
+
 <div align="center">
 
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-LBPH-green?logo=opencv)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 
-
-
-
-
-
-
-
-
-A complete end-to-end Real-Time Face Recognition System with Dataset Creation, Model Training, Live Recognition, and a Streamlit GUI launcher.
+A complete end-to-end **Real-Time Face Recognition System** with dataset creation, model training, live recognition, and GUI built using Streamlit.
 
 </div>
-🚀 Features
-1️⃣ Dataset Builder (OpenCV GUI)
 
-Captures multiple face images for each user
+---
 
-Auto & Manual capture modes
+# 🚀 Features
 
-Ensures stable face tracking
+### **1️⃣ Dataset Builder**
+- Auto / Manual capture  
+- Stable face tracking  
+- Saves images under `dataset/<person-name>/`
 
-Stores images neatly under dataset/<person-name>/
+### **2️⃣ Model Trainer**
+- Preprocesses images  
+- Trains **LBPH recognizer**  	
+- Saves:  
+  - `lbph_model.yml`  
+  - `labels.pickle`
 
-2️⃣ Model Trainer
+### **3️⃣ Live Recognition**
+- Real-time detection  
+- Shows **name + confidence**  
+- Handles unknown faces  
+- Add new person by pressing **'a'**  
+- Auto-retrain functionality  
 
-Reads labeled face folders
+### **4️⃣ Streamlit GUI**
+- 3 Tabs:
+  - 📸 Capture Dataset  
+  - 🧠 Train Model  
+  - 👁 Live Recognition  
+- Snapshot saving  
+- Full app runs without terminal commands  
 
-Preprocesses images
+---
 
-Trains LBPH (Local Binary Patterns Histogram) recognizer
-
-Saves:
-✔ lbph_model.yml
-✔ labels.pickle
-
-3️⃣ Live Recognition
-
-Real-time face detection & prediction
-
-Shows label + confidence
-
-Marks unknown faces
-
-Press 'a' to add new person directly from camera
-
-Automatically retrains and reloads the model
-
-4️⃣ Streamlit GUI (Main App)
-
-Clean and simple UI with 3 tabs:
-
-Capture Dataset
-
-Train Model
-
-Live Recognition
-
-Runs all modules without terminal commands
-
-Snapshot saving option
-
-Works with any connected webcam
-
-📁 Project Structure
+# 📁 Project Structure
+```
 Face-Recognition-App/
 │
 ├── app.py                     # Streamlit GUI launcher
@@ -81,129 +63,43 @@ Face-Recognition-App/
 │
 ├── lbph_model.yml             # generated model (not included)
 └── labels.pickle              # generated labels (not included)
+```
 
-🔧 Installation
-1. Clone the repository
+
+---
+
+# 🔧 Installation
+
+### **1. Clone the repository**
+```bash
 git clone https://github.com/<your-username>/<repo-name>.git
-cd Face-Recognition-App
-
-2. Install dependencies
+cd <repo-name>
+```
+```
 pip install -r requirements.txt
-
-
-⚠️ Make sure you installed opencv-contrib-python, not the regular OpenCV.
-
-▶️ Usage
-Start the GUI
+```
+Start the Streamlit App
+```
 streamlit run app.py
+```
+GUI Tabs
 
+:camera_flash: Capture Dataset
 
-From the GUI, you can:
+Enter person name
 
-📸 Capture Dataset
+Capture 40–60 face images
 
-Enter the person’s name
+:brain: Train Model
 
-Capture images automatically or manually
+Reads dataset folder
 
-🧠 Train Model
+Retrains LBPH classifier
 
-Reads all dataset folders
+:eye: Live Recognition
 
-Rebuilds the LBPH classifier
-
-👁 Live Recognition
-
-Detects & identifies faces
+Real-time predictions
 
 Shows confidence
 
-Press 'a' to add a new person on the fly
-
-Add your demo images or GIFs in an assets/ folder.
-
-![Dataset Builder](assets/dataset.png)
-![Recognition Demo](assets/recognition.gif)
-
-⚙️ Requirements
-
-Python 3.8+
-
-OpenCV (contrib version)
-
-Streamlit
-
-Numpy
-
-Install everything via:
-
-pip install -r requirements.txt
-
-📌 Why LBPH?
-
-LBPH is:
-
-Fast
-
-Lightweight
-
-Works without GPU
-
-Great for small datasets
-
-Easy retraining
-
-Perfect for local face recognition apps.
-
-🚧 Future Improvements
-
-Replace LBPH → FaceNet / ArcFace (Deep Learning)
-
-Add Face Enrollment Form inside Streamlit
-
-Store user data in a database
-
-Add attendance system
-
-Deploy on Streamlit Cloud
-
-Add logging & analytics
-
-❤️ Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-How to contribute:
-
-Fork the repo
-
-Create a branch: git checkout -b feature-new
-
-Commit changes
-
-Create a pull request
-
-📝 License
-
-This project is released under the MIT License.
-
-⭐ Show Your Support
-
-If you find this project useful:
-
-👉 Star the repo on GitHub
-👉 Fork it and build your own version
-
-🙌 About This Project
-
-This repo demonstrates a full real-time Face Recognition workflow designed for:
-
-Students
-
-ML beginners
-
-AI portfolio building
-
-Security automation demos
-
-Attendance system prototypes
+Press 'a' → enroll new user live
