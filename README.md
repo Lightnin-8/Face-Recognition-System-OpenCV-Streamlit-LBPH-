@@ -91,11 +91,15 @@ Enter person name
 
 Capture 40–60 face images
 
+![Dataset Builder](Assets/capture.png)
+
 :brain: Train Model
 
 Reads dataset folder
 
 Retrains LBPH classifier
+
+![DashBoard](Assets/Dashboard0.png)
 
 :eye: Live Recognition
 
@@ -104,3 +108,5 @@ Real-time predictions
 Shows confidence
 
 Press 'a' → enroll new user live
+
+![Recognition Demo](Assets/recognizer.png)
