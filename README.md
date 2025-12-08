@@ -72,8 +72,9 @@ Face-Recognition-App/
 
 ### **1. Clone the repository**
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/Lightnin-8
+/Face-Recognition-System-OpenCV-Streamlit-LBPH-.git
+cd Face-Recognition-System-OpenCV-Streamlit-LBPH-
 ```
 ```
 pip install -r requirements.txt
