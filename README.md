@@ -110,3 +110,22 @@ Shows confidence
 Press 'a' → enroll new user live
 
 ![Recognition Demo](Assets/recognizer.png)
+
+
+🚧Future Improvements
+
+Deep Learning model (FaceNet/ArcFace)
+
+Database + attendance logs
+
+Streamlit Cloud deployment
+
+Mobile-friendly UI
+
+🙌 Author
+
+Created by Himanshu
+GitHub: https://github.com/Lightnin-8
+
+LinkedIn: https://linkedin.com/in/himanshuchoudhari
+
