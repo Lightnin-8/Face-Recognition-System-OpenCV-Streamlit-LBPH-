@@ -14,7 +14,7 @@ A complete end-to-end **Real-Time Face Recognition System** with dataset creatio
 
 ---
 
-# 🚀 Features
+# Features
 
 ### **1️⃣ Dataset Builder**
 - Auto / Manual capture  
