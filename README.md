@@ -8,6 +8,11 @@
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 
+<p align="center">
+  <img src="Assets/Face Recognition Banner.png" width="100%" />
+</p>
+
+
 A complete end-to-end **Real-Time Face Recognition System** with dataset creation, model training, live recognition, and GUI built using Streamlit.
 
 </div>
